@@ -1,0 +1,34 @@
+### Emotion sample
+POST http://localhost:3000/api/emotion
+Content-Type: application/json
+
+{
+  "userId": "demo-user",
+  "timestamp": 1730582000,
+  "dominant": "fear",
+  "scores": {
+    "happy": 0.05,
+    "sad": 0.12,
+    "fear": 0.64,
+    "angry": 0.04,
+    "neutral": 0.15
+  }
+}
+
+### Chat sample - new session
+POST http://localhost:3000/api/chat
+Content-Type: application/json
+
+{
+  "userId": "demo-user",
+  "message": "Hey Unbind, I'm kind of nervous about meeting new classmates."
+}
+
+### Chat sample - follow up with emotion
+POST http://localhost:3000/api/chat
+Content-Type: application/json
+
+{
+  "userId": "demo-user",
+  "message": "That's enough for today, I'm getting tired."
+}

@@ -1,0 +1,15 @@
+{
+  "name": "unbind-ai",
+  "version": "1.0.0",
+  "description": "Reactive, emotion-aware AI companion backend",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "dev": "tsc -w"
+  },
+  "keywords": ["ai", "therapy", "social-anxiety"],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs"
+}
